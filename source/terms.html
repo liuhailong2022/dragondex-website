@@ -1,14 +1,147 @@
-@@include('_header.htm')
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<title>Terms of Use | Dragondex</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+	<meta name="description" content="This is meta description">
+	<meta name="author" content="Themefisher">
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+	<!-- # Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+	<!-- # CSS Plugins -->
+	<link rel="stylesheet" href="plugins/slick/slick.css">
+	<link rel="stylesheet" href="plugins/font-awesome/fontawesome.min.css">
+	<link rel="stylesheet" href="plugins/font-awesome/brands.css">
+	<link rel="stylesheet" href="plugins/font-awesome/solid.css">
+
+	<!-- # Main Style Sheet -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- navigation -->
+<header class="navigation bg-tertiary">
+	<nav class="navbar navbar-expand-xl navbar-light text-center py-3">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<img loading="prelaod" decoding="async" class="img-fluid" width="160" src="images/logo.png" alt="Dragondex">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+					<li class="nav-item"> <a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="about.html">About</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="how-it-works.html">How It Works</a>
+					</li>
+					<li class="nav-item d-none"> <a class="nav-link" href="services.html">Services</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="contact.html">Contact</a>
+					</li>
+					<li class="nav-item dropdown d-none"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item " href="blog.html">Blog</a>
+							</li>
+							<li><a class="dropdown-item " href="blog-details.html">Blog Details</a>
+							</li>
+							<li><a class="dropdown-item " href="service-details.html">Service Details</a>
+							</li>
+							<li><a class="dropdown-item " href="faq.html">FAQ&#39;s</a>
+							</li>
+							<li><a class="dropdown-item " href="legal.html">Legal</a>
+							</li>
+							<li><a class="dropdown-item " href="terms.html">Terms &amp; Condition</a>
+							</li>
+							<li><a class="dropdown-item " href="privacy-policy.html">Privacy &amp; Policy</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<!-- account btn --> <a href="#!" class="btn btn-outline-primary">Log In</a>
+				<!-- account btn --> <a href="#!" class="btn btn-primary ms-2 ms-lg-3">Sign Up</a>
+			</div>
+		</div>
+	</nav>
+</header>
+<!-- /navigation -->
+
+<div class="modal applyLoanModal fade" id="applyLoan" tabindex="-1" aria-labelledby="applyLoanLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <h4 class="modal-title" id="exampleModalLabel">How much do you need?</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="#!" method="post">
+          <div class="row">
+            <div class="col-lg-6 mb-4 pb-2">
+              <div class="form-group">
+                <label for="loan_amount" class="form-label">Amount</label>
+                <input type="number" class="form-control shadow-none" id="loan_amount" placeholder="ex: 25000">
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4 pb-2">
+              <div class="form-group">
+                <label for="loan_how_long_for" class="form-label">How long for?</label>
+                <input type="number" class="form-control shadow-none" id="loan_how_long_for" placeholder="ex: 12">
+              </div>
+            </div>
+            <div class="col-lg-12 mb-4 pb-2">
+              <div class="form-group">
+                <label for="loan_repayment" class="form-label">Repayment</label>
+                <input type="number" class="form-control shadow-none" id="loan_repayment" disabled>
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4 pb-2">
+              <div class="form-group">
+                <label for="loan_full_name" class="form-label">Full Name</label>
+                <input type="text" class="form-control shadow-none" id="loan_full_name">
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4 pb-2">
+              <div class="form-group">
+                <label for="loan_email_address" class="form-label">Email address</label>
+                <input type="email" class="form-control shadow-none" id="loan_email_address">
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <button type="submit" class="btn btn-primary w-100">Get Your Loan Now</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 <section class="page-header bg-tertiary">
   <div class="container">
     <div class="row">
       <div class="col-8 mx-auto text-center">
-        <h2 class="mb-3 text-capitalize">Terms &amp; Conditions</h2>
+        <h2 class="mb-3 text-capitalize">Terms of Use</h2>
         <ul class="list-inline breadcrumbs text-capitalize" style="font-weight:500">
           <li class="list-inline-item"><a href="index.html">Home</a>
           </li>
-          <li class="list-inline-item">/ &nbsp; <a href="terms.html">Terms</a>
+          <li class="list-inline-item">/ &nbsp; <a href="terms.html">Terms of Use</a>
           </li>
         </ul>
       </div>
@@ -66,43 +199,145 @@
     <div class="row">
       <div class="col-lg-10 mx-auto">
         <div class="content">
-          <h3 id="the-use-of-the-information">The Use of the Information</h3>
-          <ul>
-            <li>You cannot remove the copyright link to Gethugothemes without buying the license.</li>
-            <li>Themefisher is not responsible for you not receiving your Theme/Template if you to provide a order to
-              understand valid email or for technical issues outside our control.</li>
-          </ul>
-          <h3 id="application-processing">Application Processing</h3>
-          <ul>
-            <li>You are most welcome to share our themes with your clients/friends, but please share our license with
-              them so that they can be aware of our copyrights.</li>
-          </ul>
-          <h3 id="what-services-we-render">What Services We Render</h3>
-          <p>We collect certain identifying personal data when you sign up to our Service such as your , email address,
-            PayPal address (if different from email address), and telephone number. The personal data we collect you is
-            disclosed only in accordance with our Terms of Service and/or this Privacy Policy.Conclude collects Slack
-            account and access information from Users for the purposes of connecting to and the Slack API and to
-            authenticate to information on</p>
-          <ul>
-            <li>You cannot remove the copyright link to Gethugothemes without buying the license.</li>
-            <li>Themefisher is not responsible for you not receiving your Theme/Template if you fail to provide a valid
-              email or for technical issues outside our control.</li>
-            <li>You are most welcome to share our themes with your clients/friends, but please share our license with
-              them so that they can be aware of our copyrights.</li>
-          </ul>
-          <h3 id="intellectual-property-rights">Intellectual Property Rights</h3>
-          <ul>
-            <li>You cannot remove the copyright link to Gethugothemes without buying the license.</li>
-            <li>You have the right to use the themes for personal and commercial project(s).</li>
-            <li>You cannot resell, redistribute, or sub-license any of Gethugothemes’s themes.</li>
-            <li>You can host Gethugothemes’s template to your website with full author credit</li>
-            <li>You are most welcome to share our themes with your clients/friends, but please share our license with
-              them so that they can be aware of our copyrights.</li>
-          </ul>
+          <p class="text-muted mb-4"><strong>Last updated: 3 November 2025</strong></p>
+          <p class="mb-4">These Terms of Use ("Terms") constitute a legal agreement between you ("you", "user") and Dragondex ("we", "us", "our"). By accessing or using the Dragondex website and services ("Services"), you confirm your acceptance of these Terms and our Privacy Policy.</p>
+          
+          <h3 class="mt-5 mb-3">1. Eligibility</h3>
+          <p class="mb-4">You must be at least 18 years old and have the legal capacity to enter into a binding agreement. You may only use our Services in compliance with applicable Canadian laws and regulations.</p>
+          
+          <h3 class="mt-5 mb-3">2. Permitted Use</h3>
+          <p class="mb-4">Our Services are provided solely for exchanging USDT and Canadian Dollars (CAD). You agree not to engage in resale, commercial exploitation, or any unlawful activity using Dragondex.</p>
+          
+          <h3 class="mt-5 mb-3">3. Account and Identity Verification</h3>
+          <p class="mb-4">Before your first transaction, you are required to complete a one-time identity verification (KYC) to satisfy regulatory and compliance requirements.</p>
+          
+          <h3 class="mt-5 mb-3">4. Service Description</h3>
+          <p class="mb-4">Dragondex enables fast, compliant, and secure stablecoin exchanges. All rates are based on live market data. You are responsible for assessing suitability and risks related to digital asset exchange.</p>
+          
+          <h3 class="mt-5 mb-3">5. Risk Disclosure</h3>
+          <p class="mb-4">Digital assets and stablecoins may involve market volatility and loss of value. By using our Services, you acknowledge and accept these risks. Dragondex is not liable for losses from market price fluctuations, third-party issues, or user mistake.</p>
+          
+          <h3 class="mt-5 mb-3">6. Compliance and Prohibitions</h3>
+          <p class="mb-4">Using Dragondex to facilitate prohibited transactions (including fraud, money laundering, or any illegal activity) is strictly forbidden. We reserve the right to report suspicious activity and comply with all regulatory requests.</p>
+          
+          <h3 class="mt-5 mb-3">7. Limitation of Liability</h3>
+          <p class="mb-4">Dragondex and its operators shall not be liable for indirect, incidental, or consequential damages resulting from your use of our Services, to the maximum extent permitted by law.</p>
+          
+          <h3 class="mt-5 mb-3">8. Modification and Termination</h3>
+          <p class="mb-4">We may modify these Terms at any time, with updates posted on our website. Continued use of Dragondex constitutes acceptance of any changes. We reserve the right to suspend or terminate Service access if Terms are violated.</p>
+          
+          <h3 class="mt-5 mb-3">9. Intellectual Property</h3>
+          <p class="mb-4">All original content, branding, and technology on Dragondex are protected by intellectual property laws. Unauthorized use or reproduction is strictly prohibited.</p>
+          
+          <h3 class="mt-5 mb-3">10. Governing Law</h3>
+          <p class="mb-4">These Terms are governed by the laws of Alberta, Canada. Any disputes must be resolved in the courts of Alberta.</p>
+          
+          <h3 class="mt-5 mb-3">11. Contact</h3>
+          <div class="p-4 bg-light rounded">
+            <p class="mb-2">For all questions regarding these Terms, please email:</p>
+            <p class="mb-0"><a href="mailto:support@dragondex.ca" class="text-primary">support@dragondex.ca</a></p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-@@include('_footer.htm')
+<footer class="section-sm bg-tertiary">
+	<div class="container">
+		<div class="row justify-content-between">
+			<div class="col-lg-2 col-md-4 col-6 mb-4">
+				<div class="footer-widget">
+					<h5 class="mb-4 text-primary font-secondary">Business</h5>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="index.html">Stablecoin Exchange</a>
+						</li>
+						<li class="mb-2"><a href="index.html">Exchange Support</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-4 col-6 mb-4">
+				<div class="footer-widget">
+					<h5 class="mb-4 text-primary font-secondary">About</h5>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="https://fintrac-canafe.canada.ca/msb-esm/reg-eng#dataset-filter">Compliance</a>
+						</li>
+						<li class="mb-2"><a href="https://fintrac-canafe.canada.ca/intro-eng">FINTRAC</a>
+						</li>
+						<li class="mb-2"><a href="#!">Careers</a>
+						</li>
+						<li class="mb-2"><a href="about.html">About Us</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-4 col-6 mb-4">
+				<div class="footer-widget">
+					<h5 class="mb-4 text-primary font-secondary">Help</h5>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="contact.html">Contact Us</a>
+						</li>
+						<li class="mb-2"><a href="faq.html">FAQs</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-12 newsletter-form">
+				<div style="background-color: #F4F4F4; padding: 35px;">
+					<h5 class="mb-4 text-primary font-secondary">Subscribe</h5>
+					<div class="pe-0 pe-xl-5">
+						<form id="subscribeForm" method="post">
+							<div class="input-group mb-3">
+								<input type="email" id="subscribeEmail" class="form-control shadow-none bg-white border-end-0" placeholder="Email address" required> <span class="input-group-text border-0 p-0">
+                    <button class="input-group-text border-0 bg-primary" type="submit" name="subscribe"
+                      aria-label="Subscribe for Newsletter"><i class="fas fa-arrow-right"></i></button>
+                  </span>
+							</div>
+							<div id="subscribeMessage" class="mt-2" style="display: none;"></div>
+						</form>
+					</div>
+					<p class="mb-0">Get timely updates and expert tips on secure OTC trading, compliance, and more—delivered right to your inbox.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row align-items-center mt-5 text-center text-md-start">
+			<div class="col-lg-4">
+        <a href="index.html">
+          <img loading="prelaod" decoding="async" class="img-fluid" width="160" src="images/logo.png" alt="Dragondex">
+        </a>
+			</div>
+			<div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+				<ul class="list-unstyled list-inline mb-0 text-lg-center">
+					<li class="list-inline-item me-4"><a class="text-black" href="privacy-policy.html">Privacy Policy</a>
+					</li>
+					<li class="list-inline-item me-4"><a class="text-black" href="terms.html">Terms &amp; Conditions</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-lg-4 col-md-6 text-md-end mt-4 mt-md-0">
+				<ul class="list-unstyled list-inline mb-0 social-icons">
+					<li class="list-inline-item me-3"><a title="Explorer Facebook Profile" class="text-black" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+					</li>
+					<li class="list-inline-item me-3"><a title="Explorer Twitter Profile" class="text-black" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+					</li>
+					<li class="list-inline-item me-3"><a title="Explorer Instagram Profile" class="text-black" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<!-- # JS Plugins -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<script src="plugins/slick/slick.min.js"></script>
+<script src="plugins/scrollmenu/scrollmenu.min.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

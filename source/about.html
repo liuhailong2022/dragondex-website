@@ -1,4 +1,131 @@
-@@include('_header.htm')
+<!DOCTYPE html>
+
+
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<title>Secure Stablecoin Exchange | Dragondex</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+	<meta name="description" content="This is meta description">
+	<meta name="author" content="Themefisher">
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+	<!-- # Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+	<!-- # CSS Plugins -->
+	<link rel="stylesheet" href="plugins/slick/slick.css">
+	<link rel="stylesheet" href="plugins/font-awesome/fontawesome.min.css">
+	<link rel="stylesheet" href="plugins/font-awesome/brands.css">
+	<link rel="stylesheet" href="plugins/font-awesome/solid.css">
+
+	<!-- # Main Style Sheet -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- navigation -->
+<header class="navigation bg-tertiary">
+	<nav class="navbar navbar-expand-xl navbar-light text-center py-3">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<img loading="prelaod" decoding="async" class="img-fluid" width="192" src="images/logo.png" alt="Dragondex">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+					<li class="nav-item"> <a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="about.html">About</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="how-it-works.html">How It Works</a>
+					</li>
+					<li class="nav-item d-none"> <a class="nav-link" href="services.html">Services</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="contact.html">Contact</a>
+					</li>
+				<li class="nav-item dropdown d-none"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item " href="blog.html">Blog</a>
+							</li>
+							<li><a class="dropdown-item " href="blog-details.html">Blog Details</a>
+							</li>
+							<li><a class="dropdown-item " href="service-details.html">Service Details</a>
+							</li>
+							<li><a class="dropdown-item " href="faq.html">FAQ&#39;s</a>
+							</li>
+							<li><a class="dropdown-item " href="legal.html">Legal</a>
+							</li>
+							<li><a class="dropdown-item " href="terms.html">Terms &amp; Condition</a>
+							</li>
+							<li><a class="dropdown-item " href="privacy-policy.html">Privacy &amp; Policy</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<!-- account btn --> <a href="#!" class="btn btn-outline-primary">Log In</a>
+				<!-- account btn --> <a href="#!" class="btn btn-primary ms-2 ms-lg-3">Sign Up</a>
+			</div>
+		</div>
+	</nav>
+</header>
+<!-- /navigation -->
+
+<div class="modal applyLoanModal fade" id="applyLoan" tabindex="-1" aria-labelledby="applyLoanLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <h4 class="modal-title" id="exampleModalLabel">How much do you need?</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="#!" method="post">
+          <div class="row">
+            <div class="col-lg-6 mb-4 pb-2">
+              <div class="form-group">
+                <label for="loan_amount" class="form-label">Amount</label>
+                <input type="number" class="form-control shadow-none" id="loan_amount" placeholder="ex: 25000">
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4 pb-2">
+              <div class="form-group">
+                <label for="loan_how_long_for" class="form-label">How long for?</label>
+                <input type="number" class="form-control shadow-none" id="loan_how_long_for" placeholder="ex: 12">
+              </div>
+            </div>
+            <div class="col-lg-12 mb-4 pb-2">
+              <div class="form-group">
+                <label for="loan_repayment" class="form-label">Repayment</label>
+                <input type="number" class="form-control shadow-none" id="loan_repayment" disabled>
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4 pb-2">
+              <div class="form-group">
+                <label for="loan_full_name" class="form-label">Full Name</label>
+                <input type="text" class="form-control shadow-none" id="loan_full_name">
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4 pb-2">
+              <div class="form-group">
+                <label for="loan_email_address" class="form-label">Email address</label>
+                <input type="email" class="form-control shadow-none" id="loan_email_address">
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <button type="submit" class="btn btn-primary w-100">Get Your Loan Now</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 <section class="page-header bg-tertiary">
 	<div class="container">
@@ -40,11 +167,10 @@
 		<div class="row justify-content-center align-items-center">
 			<div class="col-lg-7">
 				<div class="section-title">
-					<p class="text-primary text-uppercase fw-bold mb-3">About Wallet</p>
-					<h2 class="h1 mb-4">Business Loans <br> For Daily Expenses</h2>
+					<p class="text-primary text-uppercase fw-bold mb-3">About Dragondex</p>
+					<h2 class="h1 mb-4">Secure. Compliant. <br> Focused on stablecoin <br> exchange.</h2>
 					<div class="content pe-0 pe-lg-5">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-						<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						<p>We specialize in compliant OTC transactions between USDT and Canadian Dollars. Dragondex streamlines access to secure, transparent stablecoin conversions for individuals and institutions—leveraging top regulated trading platforms.</p>
 					</div>
 				</div>
 			</div>
@@ -63,20 +189,20 @@
 					<p class="text-primary text-uppercase fw-bold mb-3"></p>
 					<h2>Who We Are?</h2>
 				</div>
-				<p class="lead">Insight loan advisors is completely independent loan advising service and our directory of lenders gives you all the information lorem ipsums sitamets.</p>
-				<div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consv peent esque urna. Ac eu fringilla intea dger egadv estas ut. Sed vulutate aenean nunc quis a urna morbi id vitae. Vulpuate nisl</div>
+				<p class="lead">We are OTC professionals with proven expertise in stablecoin and fiat asset management. Our deep understanding of regulatory requirements ensures every exchange is secure and fully compliant.</p>
+				<div class="content">Our team combines deep experience in digital asset trading with an unwavering dedication to regulatory compliance. Every Dragondex exchange benefits from our commitment to security, integrity, and professional excellence.</div>
 			</div>
 			<div class="col-lg-5">
 				<div class="section-title">
 					<p class="text-primary text-uppercase fw-bold mb-3"></p>
 					<h2>What We Offer?</h2>
 				</div>
-				<p class="lead">Our loan sanction is one of the quicke with eas documentation and doorstep lorem ipsum serviceullam dolor sitisi.</p>
+				<p class="lead">We facilitate OTC conversions between USDT and Canadian Dollars on major regulated platforms. No other crypto products—just straightforward, transparent stablecoin transactions tailored for individuals and institutions.</p>
 				<div class="content">
 					<ul>
-						<li>Habit building in essential steps choose habit</li>
-						<li>Get an overview of Habit Calendars Latest Posts</li>
-						<li>Start building habit with Habitify on platform</li>
+						<li>Simplicity</li>
+						<li>Security</li>
+						<li>Direct settlement</li>
 					</ul>
 				</div>
 			</div>
@@ -104,20 +230,20 @@
 			<div class="col-lg-4 col-md-6 mb-5 mb-lg-0 text-center icon-box-item">
 				<div class="icon icon-lg bg-transparent mb-4"><i class="fas fa-mouse-pointer text-primary"></i>
 				</div>
-				<h3>Quick Decision</h3>
-				<p class="px-lg-5">Begin the process when it is convenient for you</p>
+				<h3>Quick Quote</h3>
+				<p class="px-lg-5">Get a rate quote as soon as you reach out</p>
 			</div>
 			<div class="col-lg-4 col-md-6 mb-5 mb-lg-0 text-center icon-box-item">
 				<div class="icon icon-lg bg-transparent mb-4"><i class="fas fa-file-alt text-primary"></i>
 				</div>
-				<h3>Submit Your Info</h3>
-				<p class="px-lg-5">Begin the process when it is convenient for you</p>
+				<h3>Submit Your Details</h3>
+				<p class="px-lg-5">Easily provide your information in a secure channel</p>
 			</div>
 			<div class="col-lg-4 col-md-6 mb-5 mb-lg-0 text-center icon-box-item">
 				<div class="icon icon-lg bg-transparent mb-4"><i class="fas fa-briefcase text-primary"></i>
 				</div>
-				<h3>Funds To You</h3>
-				<p class="px-lg-5">Begin the process when it is convenient for you</p>
+				<h3>Funds Delivered</h3>
+				<p class="px-lg-5">Receive your USDT or CAD transfer promptly and safely</p>
 			</div>
 		</div>
 	</div>
@@ -131,29 +257,29 @@
 					<div class="icon-box-item col-md-6">
 						<div class="block bg-white">
 							<div class="icon rounded-number">01</div>
-							<h3 class="mb-3">Authentic</h3>
-							<p class="mb-0">Lorem ipsum dolor sit aamet, ctetur adsipis cing elit. Lacaus</p>
+							<h3 class="mb-3">Integrity</h3>
+							<p class="mb-0">We maintain the highest ethical standards in all stablecoin exchange operations.</p>
 						</div>
 					</div>
 					<div class="icon-box-item col-md-6">
 						<div class="block bg-white">
 							<div class="icon rounded-number">02</div>
-							<h3 class="mb-3">Empathetic</h3>
-							<p class="mb-0">Lorem ipsum dolor sit aamet, ctetur adsipis cing elit. Lacaus</p>
+							<h3 class="mb-3">Responsiveness</h3>
+							<p class="mb-0">Every client inquiry and transaction is handled with diligence and timely care.</p>
 						</div>
 					</div>
 					<div class="icon-box-item col-md-6">
 						<div class="block bg-white">
 							<div class="icon rounded-number">03</div>
-							<h3 class="mb-3">All Improving</h3>
-							<p class="mb-0">Lorem ipsum dolor sit aamet, ctetur adsipis cing elit. Lacaus</p>
+							<h3 class="mb-3">Growth</h3>
+							<p class="mb-0">We are dedicated to evolving our practices and systems for security and compliance.</p>
 						</div>
 					</div>
 					<div class="icon-box-item col-md-6">
 						<div class="block bg-white">
 							<div class="icon rounded-number">04</div>
 							<h3 class="mb-3">User-Focused</h3>
-							<p class="mb-0">Lorem ipsum dolor sit aamet, ctetur adsipis cing elit. Lacaus</p>
+							<p class="mb-0">Your needs and peace of mind are at the center of every solution we offer.</p>
 						</div>
 					</div>
 					<div class="has-shapes">
@@ -207,8 +333,8 @@
 					<p class="text-primary text-uppercase fw-bold mb-3">Values Wr Provide</p>
 					<h2 class="h1">Our Core Values</h2>
 					<div class="content">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consv allis quam aliquet integer eget magna ullam corper intesager peent esque urna. Sed vulutate aenean nunc quis a urna morbi id vitae. Vulpuate nisl</p>
-						<p>sed morbi sit ut placerat eges aeftas et. Pellen tesque tristisque magnis augue gravida pulvinar placerat. Tellus massa pretra scelerisque leo. In volutpat arcu nunc nisl et, viverra faucisfbus egestas. In habitasse sagittis, convallis ut commodo amet.</p>
+						<p>At Dragondex, we value integrity, transparency, and trust above all. Every stablecoin exchange is handled with professionalism and respect for the highest ethical standards, giving our clients confidence at every step.</p>
+						<p>We continuously pursue excellence by refining our processes, investing in security, and staying ahead of regulatory changes. Our goal is to deliver a seamless, compliant experience and build lasting relationships in the Canadian stablecoin market.</p>
 					</div>
 				</div>
 			</div>
@@ -221,10 +347,10 @@
 		<div class="row justify-content-center">
 			<div class="col-12">
 				<div class="section-title text-center">
-					<p class="text-primary text-uppercase fw-bold mb-3">Questions You Have</p>
-					<h1>People Behind Us</h1>
-					<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing . egestas
-						<br>cursus pellentesque dignissim dui, congue. Vel etiam ut</p>
+					<p class="text-primary text-uppercase fw-bold mb-3">Our Commitment</p>
+					<h1>Our Mission & Vision</h1>
+					<p class="mb-0">We make stablecoin exchanges simple, transparent, and secure.
+						<br>Our mission is to empower users with trusted, compliant trading solutions.</p>
 				</div>
 			</div>
 		</div>
@@ -243,8 +369,8 @@
 						</ul>
 					</div>
 					<div class="card-body">
-						<h3>Scarlet Pena</h3>
-						<p>Instructor</p>
+						<h3>Security</h3>
+						<p>Secured Reliable Transfers.</p>
 					</div>
 				</div>
 			</div>
@@ -262,8 +388,8 @@
 						</ul>
 					</div>
 					<div class="card-body">
-						<h3>Claire Simmmons</h3>
-						<p>Founder</p>
+						<h3>Compliance</h3>
+						<p>Strict regulatory standards, always.</p>
 					</div>
 				</div>
 			</div>
@@ -281,15 +407,15 @@
 						</ul>
 					</div>
 					<div class="card-body">
-						<h3>Leslie Pena</h3>
-						<p>Director</p>
+						<h3>Transparency</h3>
+						<p>Clear communication at every step.</p>
 					</div>
 				</div>
 			</div>
 			<div class="col-xl-3 col-lg-4 col-md-6 mt-4">
 				<div class="card bg-transparent border-0 text-center">
 					<div class="card-img">
-						<img loading="lazy" decoding="async" src="images/about/team-1.jpg" alt="Scarlet Pena" class="rounded w-100" width="300" height="332">
+						<img loading="lazy" decoding="async" src="images/about/team-4.jpg" alt="Scarlet Pena" class="rounded w-100" width="300" height="332">
 						<ul class="card-social list-inline">
 							<li class="list-inline-item"><a class="facebook" href="#"><i class="fab fa-facebook"></i></a>
 							</li>
@@ -300,8 +426,8 @@
 						</ul>
 					</div>
 					<div class="card-body">
-						<h3>Scarlet Pena</h3>
-						<p>Instructor</p>
+						<h3>Support</h3>
+						<p>Help available when you need it.</p>
 					</div>
 				</div>
 			</div>
@@ -309,4 +435,101 @@
 	</div>
 </section>
 
-@@include('_footer.htm')
+<footer class="section-sm bg-tertiary">
+	<div class="container">
+		<div class="row justify-content-between">
+			<div class="col-lg-2 col-md-4 col-6 mb-4">
+				<div class="footer-widget">
+					<h5 class="mb-4 text-primary font-secondary">Business</h5>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="index.html">Stablecoin Exchange</a>
+						</li>
+						<li class="mb-2"><a href="index.html">Exchange Support</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-4 col-6 mb-4">
+				<div class="footer-widget">
+					<h5 class="mb-4 text-primary font-secondary">About</h5>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="https://fintrac-canafe.canada.ca/msb-esm/reg-eng#dataset-filter">Compliance</a>
+						</li>
+						<li class="mb-2"><a href="https://fintrac-canafe.canada.ca/intro-eng">FINTRAC</a>
+						</li>
+						<li class="mb-2"><a href="#!">Careers</a>
+						</li>
+						<li class="mb-2"><a href="about.html">About Us</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-4 col-6 mb-4">
+				<div class="footer-widget">
+					<h5 class="mb-4 text-primary font-secondary">Help</h5>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="contact.html">Contact Us</a>
+						</li>
+						<li class="mb-2"><a href="faq.html">FAQs</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-12 newsletter-form">
+				<div style="background-color: #F4F4F4; padding: 35px;">
+					<h5 class="mb-4 text-primary font-secondary">Subscribe</h5>
+					<div class="pe-0 pe-xl-5">
+						<form id="subscribeForm" method="post">
+							<div class="input-group mb-3">
+								<input type="email" id="subscribeEmail" class="form-control shadow-none bg-white border-end-0" placeholder="Email address" required> <span class="input-group-text border-0 p-0">
+                    <button class="input-group-text border-0 bg-primary" type="submit" name="subscribe"
+                      aria-label="Subscribe for Newsletter"><i class="fas fa-arrow-right"></i></button>
+                  </span>
+							</div>
+							<div id="subscribeMessage" class="mt-2" style="display: none;"></div>
+						</form>
+					</div>
+					<p class="mb-0">Get timely updates and expert tips on secure OTC trading, compliance, and more—delivered right to your inbox.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row align-items-center mt-5 text-center text-md-start">
+			<div class="col-lg-4">
+        <a href="index.html">
+          <img loading="prelaod" decoding="async" class="img-fluid" width="192" src="images/logo.png" alt="Wallet">
+        </a>
+			</div>
+			<div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+				<ul class="list-unstyled list-inline mb-0 text-lg-center">
+					<li class="list-inline-item me-4"><a class="text-black" href="privacy-policy.html">Privacy Policy</a>
+					</li>
+					<li class="list-inline-item me-4"><a class="text-black" href="terms.html">Terms &amp; Conditions</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-lg-4 col-md-6 text-md-end mt-4 mt-md-0">
+				<ul class="list-unstyled list-inline mb-0 social-icons">
+					<li class="list-inline-item me-3"><a title="Explorer Facebook Profile" class="text-black" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+					</li>
+					<li class="list-inline-item me-3"><a title="Explorer Twitter Profile" class="text-black" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+					</li>
+					<li class="list-inline-item me-3"><a title="Explorer Instagram Profile" class="text-black" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<!-- # JS Plugins -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<script src="plugins/slick/slick.min.js"></script>
+<script src="plugins/scrollmenu/scrollmenu.min.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
