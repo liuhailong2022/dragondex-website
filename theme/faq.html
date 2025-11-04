@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<title>Secure Stablecoin Exchange | Dragondex</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+	<meta name="description" content="This is meta description">
+	<meta name="author" content="Themefisher">
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+	<!-- # Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+	<!-- # CSS Plugins -->
+	<link rel="stylesheet" href="plugins/slick/slick.css">
+	<link rel="stylesheet" href="plugins/font-awesome/fontawesome.min.css">
+	<link rel="stylesheet" href="plugins/font-awesome/brands.css">
+	<link rel="stylesheet" href="plugins/font-awesome/solid.css">
+
+	<!-- # Main Style Sheet -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- navigation -->
+<header class="navigation bg-tertiary">
+	<nav class="navbar navbar-expand-xl navbar-light text-center py-3">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<img loading="prelaod" decoding="async" class="img-fluid" width="192" src="images/logo.png" alt="Dragondex">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+					<li class="nav-item"> <a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="about.html">About</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="how-it-works.html">How It Works</a>
+					</li>
+					<li class="nav-item d-none"> <a class="nav-link" href="services.html">Services</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="contact.html">Contact</a>
+					</li>
+			<li class="nav-item dropdown d-none"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item " href="blog.html">Blog</a>
+							</li>
+							<li><a class="dropdown-item " href="blog-details.html">Blog Details</a>
+							</li>
+							<li><a class="dropdown-item " href="service-details.html">Service Details</a>
+							</li>
+							<li><a class="dropdown-item " href="faq.html">FAQ&#39;s</a>
+							</li>
+							<li><a class="dropdown-item " href="legal.html">Legal</a>
+							</li>
+							<li><a class="dropdown-item " href="terms.html">Terms &amp; Condition</a>
+							</li>
+							<li><a class="dropdown-item " href="privacy-policy.html">Privacy &amp; Policy</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<!-- account btn --> <a href="#!" class="btn btn-outline-primary">Log In</a>
+				<!-- account btn --> <a href="#!" class="btn btn-primary ms-2 ms-lg-3">Sign Up</a>
+			</div>
+		</div>
+	</nav>
+</header>
+<!-- /navigation -->
+
+<div class="modal applyLoanModal fade" id="applyLoan" tabindex="-1" aria-labelledby="applyLoanLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <h4 class="modal-title" id="exampleModalLabel">How much do you need?</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="#!" method="post">
+          <div class="row">
+            <div class="col-lg-6 mb-4 pb-2">
+              <div class="form-group">
+                <label for="loan_amount" class="form-label">Amount</label>
+                <input type="number" class="form-control shadow-none" id="loan_amount" placeholder="ex: 25000">
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4 pb-2">
+              <div class="form-group">
+                <label for="loan_how_long_for" class="form-label">How long for?</label>
+                <input type="number" class="form-control shadow-none" id="loan_how_long_for" placeholder="ex: 12">
+              </div>
+            </div>
+            <div class="col-lg-12 mb-4 pb-2">
+              <div class="form-group">
+                <label for="loan_repayment" class="form-label">Repayment</label>
+                <input type="number" class="form-control shadow-none" id="loan_repayment" disabled>
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4 pb-2">
+              <div class="form-group">
+                <label for="loan_full_name" class="form-label">Full Name</label>
+                <input type="text" class="form-control shadow-none" id="loan_full_name">
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4 pb-2">
+              <div class="form-group">
+                <label for="loan_email_address" class="form-label">Email address</label>
+                <input type="email" class="form-control shadow-none" id="loan_email_address">
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <button type="submit" class="btn btn-primary w-100">Get Your Loan Now</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-6">
+        <div class="section-title text-center">
+          <p class="text-primary text-uppercase fw-bold mb-3">Frequient Questions</p>
+          <h1>Frequently Asked Questions</h1>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <div class="accordion accordion-border-bottom" id="accordionFAQ">
+          <div class="accordion-item p-1 mb-2">
+            <h2 class="accordion-header accordion-button h5 border-0 active"
+              id="heading-ebd23e34fd2ed58299b32c03c521feb0b02f19d9" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse-ebd23e34fd2ed58299b32c03c521feb0b02f19d9" aria-expanded="true"
+              aria-controls="collapse-ebd23e34fd2ed58299b32c03c521feb0b02f19d9">What types of assets can I exchange here?
+            </h2>
+            <div id="collapse-ebd23e34fd2ed58299b32c03c521feb0b02f19d9"
+              class="accordion-collapse collapse border-0 show"
+              aria-labelledby="heading-ebd23e34fd2ed58299b32c03c521feb0b02f19d9" data-bs-parent="#accordionFAQ">
+              <div class="accordion-body py-0 content">Currently, only USDT stablecoin and Canadian Dollars (CAD) are supported for OTC exchanges. No other cryptocurrencies or investment products are involved.</div>
+            </div>
+          </div>
+          <div class="accordion-item p-1 mb-2">
+            <h2 class="accordion-header accordion-button h5 border-0 "
+              id="heading-a443e01b4db47b3f4a1267e10594576d52730ec1" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse-a443e01b4db47b3f4a1267e10594576d52730ec1" aria-expanded="false"
+              aria-controls="collapse-a443e01b4db47b3f4a1267e10594576d52730ec1">Do I need to complete identity verification?
+            </h2>
+            <div id="collapse-a443e01b4db47b3f4a1267e10594576d52730ec1" class="accordion-collapse collapse border-0 "
+              aria-labelledby="heading-a443e01b4db47b3f4a1267e10594576d52730ec1" data-bs-parent="#accordionFAQ">
+              <div class="accordion-body py-0 content">Yes. All participants must pass a KYC (Know Your Customer) check before initiating any transaction, in accordance with compliance requirements.</div>
+            </div>
+          </div>
+          <div class="accordion-item p-1 mb-2">
+            <h2 class="accordion-header accordion-button h5 border-0 "
+              id="heading-4b82be4be873c8ad699fa97049523ac86b67a8bd" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse-4b82be4be873c8ad699fa97049523ac86b67a8bd" aria-expanded="false"
+              aria-controls="collapse-4b82be4be873c8ad699fa97049523ac86b67a8bd">How are my funds kept safe?
+            </h2>
+            <div id="collapse-4b82be4be873c8ad699fa97049523ac86b67a8bd" class="accordion-collapse collapse border-0 "
+              aria-labelledby="heading-4b82be4be873c8ad699fa97049523ac86b67a8bd" data-bs-parent="#accordionFAQ">
+              <div class="accordion-body py-0 content">All exchanges are processed through globally regulated trading platforms, with no custody of user funds. Transactions are settled directly and securely between parties.</div>
+            </div>
+          </div>
+          <div class="accordion-item p-1 mb-2">
+            <h2 class="accordion-header accordion-button h5 border-0 "
+              id="heading-3e13e9676a9cd6a6f8bfbe6e1e9fc0881ef247b3" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse-3e13e9676a9cd6a6f8bfbe6e1e9fc0881ef247b3" aria-expanded="false"
+              aria-controls="collapse-3e13e9676a9cd6a6f8bfbe6e1e9fc0881ef247b3">Are there any hidden fees or charges?
+            </h2>
+            <div id="collapse-3e13e9676a9cd6a6f8bfbe6e1e9fc0881ef247b3" class="accordion-collapse collapse border-0 "
+              aria-labelledby="heading-3e13e9676a9cd6a6f8bfbe6e1e9fc0881ef247b3" data-bs-parent="#accordionFAQ">
+              <div class="accordion-body py-0 content">No. All rates and fees are fully disclosed before each transaction. There are no hidden or unexpected costs.</div>
+            </div>
+          </div>
+          <div class="accordion-item p-1 mb-2">
+            <h2 class="accordion-header accordion-button h5 border-0 "
+              id="heading-0c2f829793a1f0562fea97120357dd2d43319164" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse-0c2f829793a1f0562fea97120357dd2d43319164" aria-expanded="false"
+              aria-controls="collapse-0c2f829793a1f0562fea97120357dd2d43319164">How long does it take to complete an exchange?
+            </h2>
+            <div id="collapse-0c2f829793a1f0562fea97120357dd2d43319164" class="accordion-collapse collapse border-0 "
+              aria-labelledby="heading-0c2f829793a1f0562fea97120357dd2d43319164" data-bs-parent="#accordionFAQ">
+              <div class="accordion-body py-0 content">Most transactions are settled within a few hours during business days, depending on network and banking confirmation times.</div>
+            </div>
+          </div>
+          <div class="accordion-item p-1 mb-2">
+            <h2 class="accordion-header accordion-button h5 border-0 "
+              id="heading-8fe6730e26db16f15763887c30a614caa075f518" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse-8fe6730e26db16f15763887c30a614caa075f518" aria-expanded="false"
+              aria-controls="collapse-8fe6730e26db16f15763887c30a614caa075f518">Who can I contact if I have questions or encounter issues?
+            </h2>
+            <div id="collapse-8fe6730e26db16f15763887c30a614caa075f518" class="accordion-collapse collapse border-0 "
+              aria-labelledby="heading-8fe6730e26db16f15763887c30a614caa075f518" data-bs-parent="#accordionFAQ">
+              <div class="accordion-body py-0 content">Our support team is available by email and is happy to answer any questions regarding compliance, process, or settlement. We are committed to clear and prompt communication.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="section-sm bg-tertiary">
+	<div class="container">
+		<div class="row justify-content-between">
+			<div class="col-lg-2 col-md-4 col-6 mb-4">
+				<div class="footer-widget">
+					<h5 class="mb-4 text-primary font-secondary">Business</h5>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="index.html">Stablecoin Exchange</a>
+						</li>
+						<li class="mb-2"><a href="index.html">Exchange Support</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-4 col-6 mb-4">
+				<div class="footer-widget">
+					<h5 class="mb-4 text-primary font-secondary">About</h5>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="https://fintrac-canafe.canada.ca/msb-esm/reg-eng#dataset-filter">Compliance</a>
+						</li>
+						<li class="mb-2"><a href="https://fintrac-canafe.canada.ca/intro-eng">FINTRAC</a>
+						</li>
+						<li class="mb-2"><a href="#!">Careers</a>
+						</li>
+						<li class="mb-2"><a href="about.html">About Us</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-4 col-6 mb-4">
+				<div class="footer-widget">
+					<h5 class="mb-4 text-primary font-secondary">Help</h5>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="contact.html">Contact Us</a>
+						</li>
+						<li class="mb-2"><a href="faq.html">FAQs</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-12 newsletter-form">
+				<div style="background-color: #F4F4F4; padding: 35px;">
+					<h5 class="mb-4 text-primary font-secondary">Subscribe</h5>
+					<div class="pe-0 pe-xl-5">
+						<form id="subscribeForm" method="post">
+							<div class="input-group mb-3">
+								<input type="email" id="subscribeEmail" class="form-control shadow-none bg-white border-end-0" placeholder="Email address" required> <span class="input-group-text border-0 p-0">
+                    <button class="input-group-text border-0 bg-primary" type="submit" name="subscribe"
+                      aria-label="Subscribe for Newsletter"><i class="fas fa-arrow-right"></i></button>
+                  </span>
+							</div>
+							<div id="subscribeMessage" class="mt-2" style="display: none;"></div>
+						</form>
+					</div>
+						<p class="mb-0">Get timely updates and expert tips on secure OTC trading, compliance, and more—delivered right to your inbox.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row align-items-center mt-5 text-center text-md-start">
+			<div class="col-lg-4">
+        <a href="index.html">
+          <img loading="prelaod" decoding="async" class="img-fluid" width="192" src="images/logo.png" alt="Wallet">
+        </a>
+			</div>
+			<div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+				<ul class="list-unstyled list-inline mb-0 text-lg-center">
+					<li class="list-inline-item me-4"><a class="text-black" href="privacy-policy.html">Privacy Policy</a>
+					</li>
+					<li class="list-inline-item me-4"><a class="text-black" href="terms.html">Terms &amp; Conditions</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-lg-4 col-md-6 text-md-end mt-4 mt-md-0">
+				<ul class="list-unstyled list-inline mb-0 social-icons">
+					<li class="list-inline-item me-3"><a title="Explorer Facebook Profile" class="text-black" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+					</li>
+					<li class="list-inline-item me-3"><a title="Explorer Twitter Profile" class="text-black" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+					</li>
+					<li class="list-inline-item me-3"><a title="Explorer Instagram Profile" class="text-black" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<!-- # JS Plugins -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<script src="plugins/slick/slick.min.js"></script>
+<script src="plugins/scrollmenu/scrollmenu.min.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
